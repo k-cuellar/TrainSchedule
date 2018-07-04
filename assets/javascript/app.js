@@ -50,7 +50,7 @@ $("#addTrainBtn").on("click", function(){
 });
 
 
-// 3. Create Firebase event for adding train to the database and a row in the html when a user adds an entry
+// Create Firebase event for adding train to the database and a row in the html when a user adds an entry
 database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
 	console.log(childSnapshot.val());
@@ -59,7 +59,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
 	// Console log train Info
 
-	// format train start
+	// Format train start
 	
 	// Calculate the time when Next train Arrives
 
